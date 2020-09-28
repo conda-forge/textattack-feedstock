@@ -39,6 +39,7 @@ requirements:
     - tensorflow-hub
     - tensorboardX
     - terminaltables
+    - torchfile
     - tokenizers
     - tqdm
     # - visdom
