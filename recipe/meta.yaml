@@ -42,7 +42,7 @@ requirements:
     - torchfile
     - tokenizers
     - tqdm
-    # - visdom
+    - visdom
     - wandb
     - python-flair
 
