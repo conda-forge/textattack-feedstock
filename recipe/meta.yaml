@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python
-    - bert_score
+    - bert_score >=0.3.5
     - editdistance
     - filelock
     - language_tool_python
@@ -31,9 +31,9 @@ requirements:
     - pandas >=1.0.1
     - scikit-learn
     - scipy >=1.4.1
-    - sentence-transformers
+    - sentence-transformers >0.2.6
     - pytorch
-    - transformers
+    - transformers ==3.0.2
     - tensorflow >=2
     - tensorflow-hub
     - tensorboardX
