@@ -10,7 +10,7 @@ source:
   sha256: 9ccb8b2a43120ee2d140fda78d4dfd7f0339e6d051a2c67cc9e891df2b993d85
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -25,19 +25,19 @@ requirements:
     - filelock
     - language_tool_python
     - lru-dict 
-    - nltk
     - nlp
     - numpy
-    - pandas >=1.0.1
+    - pandas 
     - scikit-learn
-    - scipy >=1.4.1
+    - scipy 
     - sentence-transformers
     - pytorch
     - transformers
-    - tensorflow >=2
+    - tensorflow 
     - tensorflow-hub
     - tensorboardX
     - terminaltables
+    - torchfile
     - tokenizers
     - tqdm
     - visdom
