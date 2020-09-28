@@ -34,7 +34,8 @@ requirements:
     - sentence-transformers
     - pytorch
     - transformers >=3.0.2
-    - tensorflow >=2
+    # - tensorflow >=2
+    - tensorflow 
     - tensorflow-hub
     - tensorboardX
     - terminaltables
