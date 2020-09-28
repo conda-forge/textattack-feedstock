@@ -38,6 +38,7 @@ requirements:
     - tensorflow-hub
     - tensorboardX
     - terminaltables
+    - matplotlib-base
     - tokenizers
     - tqdm
     - visdom
