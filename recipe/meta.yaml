@@ -32,7 +32,7 @@ requirements:
     - scipy 
     - sentence-transformers
     - pytorch
-    - transformers >=3.0.2
+    - transformers
     - tensorflow 
     - tensorflow-hub
     - tensorboardX
