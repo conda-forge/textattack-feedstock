@@ -5,11 +5,13 @@ Home: https://github.com/QData/textattack
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/textattack-feedstock/blob/master/LICENSE.txt)
 
 Summary: Generating adversarial examples for NLP models
 
+Development: https://github.com/QData/textattack
 
+Documentation: https://textattack.readthedocs.io/en/latest/
 
 Current build status
 ====================
