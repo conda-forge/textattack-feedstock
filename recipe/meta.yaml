@@ -1,5 +1,5 @@
 {% set name = "textattack" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/QData/{{ name|title }}/archive/{{ version }}.tar.gz
-  sha256: 9ccb8b2a43120ee2d140fda78d4dfd7f0339e6d051a2c67cc9e891df2b993d85
+  sha256: 95f712d6822bfe8918a315cf3489270fef3b73c99b89a79b8daea639efc24d74
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -24,16 +24,16 @@ requirements:
     - editdistance
     - filelock
     - language_tool_python
-    - lru-dict 
+    - lru-dict
     - nlp
     - numpy
-    - pandas 
+    - pandas
     - scikit-learn
-    - scipy 
+    - scipy
     - sentence-transformers
     - pytorch
     - transformers
-    - tensorflow 
+    - tensorflow
     - tensorflow-hub
     - tensorboardX
     - terminaltables
