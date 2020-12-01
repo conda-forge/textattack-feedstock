@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/QData/{{ name|title }}/archive/{{ version }}.tar.gz
+  url: https://github.com/QData/TextAttack/archive/v{{ version }}.tar.gz
   sha256: 4b593286f06af0ed1c54787f7486600670e99caa140b7f327f329bba30eedeb8
 
 build:
