@@ -1,4 +1,4 @@
-x{% set name = "textattack" %}
+{% set name = "textattack" %}
 {% set version = "0.2.14" %}
 
 package:
