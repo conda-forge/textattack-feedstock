@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - bert_score
     - editdistance
     - filelock
@@ -30,7 +30,6 @@ requirements:
     - pandas
     - scikit-learn
     - scipy
-    - sentence-transformers
     - pytorch
     - transformers
     - tensorflow
@@ -49,7 +48,7 @@ requirements:
     - datasets
 
 test:
-  commands: 
+  commands:
     - textattack --help
 
 about:
