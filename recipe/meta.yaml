@@ -49,7 +49,7 @@ requirements:
     - datasets
 
 test:
-  commands:
+  commands: 
     - textattack --help
 
 about:
