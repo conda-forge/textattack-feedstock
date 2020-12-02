@@ -45,6 +45,7 @@ requirements:
     - python-flair
     - lemminflect
     - num2words
+    - word2number
 
 test:
   commands:
