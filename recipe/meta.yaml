@@ -49,8 +49,8 @@ requirements:
     - nltk
 
 test:
-  commands:
-    - textattack --help
+  imports:
+    - textattack
 
 about:
   home: https://github.com/QData/textattack
