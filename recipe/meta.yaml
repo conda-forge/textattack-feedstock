@@ -46,6 +46,7 @@ requirements:
     - lemminflect
     - num2words
     - word2number
+    - datasets
 
 test:
   commands:
