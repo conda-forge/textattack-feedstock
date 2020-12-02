@@ -46,6 +46,7 @@ requirements:
     - num2words
     - word2number
     - datasets
+    - nltk
 
 test:
   commands:
