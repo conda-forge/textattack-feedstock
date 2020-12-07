@@ -25,34 +25,31 @@ requirements:
     - filelock
     - language_tool_python
     - lru-dict
-    - nlp
-    - numpy
+    # - nlp
+    - numpy <1.19.0
     - pandas
-    - scikit-learn
+    # - scikit-learn
     - scipy
     - pytorch
-    - sentence-transformers
+    # - sentence-transformers
     - transformers
-    - tensorflow
-    - tensorflow-hub
-    - tensorboardX
+    # - tensorflow
+    # - tensorflow-hub
+    # - tensorboardX
     - terminaltables
-    - torchfile
+    # - torchfile
     - tokenizers
     - tqdm
     - visdom
-    - wandb
+    # - wandb
     - python-flair
     - lemminflect
     - num2words
     - word2number
     - datasets
-    - docformatter
-    - gensim
+    - nltk
 
 test:
-  requires:
-    - docformatter
   commands:
     - textattack --help
 
