@@ -1,48 +1,53 @@
 {% set name = "textattack" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.14" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/QData/{{ name|title }}/archive/{{ version }}.tar.gz
-  sha256: 9ccb8b2a43120ee2d140fda78d4dfd7f0339e6d051a2c67cc9e891df2b993d85
+  url: https://github.com/QData/TextAttack/archive/v{{ version }}.tar.gz
+  sha256: 4b593286f06af0ed1c54787f7486600670e99caa140b7f327f329bba30eedeb8
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . -v
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - bert_score
     - editdistance
     - filelock
     - language_tool_python
-    - lru-dict 
-    - nlp
-    - numpy
-    - pandas 
-    - scikit-learn
-    - scipy 
-    - sentence-transformers
+    - lru-dict
+    # - nlp
+    - numpy <1.19.0
+    - pandas
+    # - scikit-learn
+    - scipy
     - pytorch
+    # - sentence-transformers
     - transformers
-    - tensorflow 
-    - tensorflow-hub
-    - tensorboardX
+    # - tensorflow
+    # - tensorflow-hub
+    # - tensorboardX
     - terminaltables
-    - torchfile
+    # - torchfile
     - tokenizers
     - tqdm
     - visdom
-    - wandb
+    # - wandb
     - python-flair
+    - lemminflect
+    - num2words
+    - word2number
+    - datasets
+    - nltk
 
 test:
   commands:
