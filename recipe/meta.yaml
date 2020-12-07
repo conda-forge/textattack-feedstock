@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - bert_score
     - editdistance
     - filelock
@@ -47,8 +47,12 @@ requirements:
     - num2words
     - word2number
     - datasets
+    - docformatter
+    - gensim
 
 test:
+  requires:
+    - docformatter
   commands:
     - textattack --help
 
