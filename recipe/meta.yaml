@@ -10,9 +10,9 @@ source:
   sha256: 4b593286f06af0ed1c54787f7486600670e99caa140b7f327f329bba30eedeb8
 
 build:
+  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [py38]
+  script: {{ PYTHON }} -m pip install . -v
 
 requirements:
   host:
@@ -31,6 +31,7 @@ requirements:
     - scikit-learn
     - scipy
     - pytorch
+    - sentence-transformers
     - transformers
     - tensorflow
     - tensorflow-hub
@@ -46,11 +47,10 @@ requirements:
     - num2words
     - word2number
     - datasets
-    - nltk
 
 test:
-  imports:
-    - textattack
+  commands:
+    - textattack --help
 
 about:
   home: https://github.com/QData/textattack
