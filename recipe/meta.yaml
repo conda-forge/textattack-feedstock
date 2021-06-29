@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/QData/{{ name|title }}/archive/{{ version }}.tar.gz
+  url: https://github.com/QData/{{ name|title }}/archive/v{{ version }}.tar.gz
   sha256: 7b97f0aad76b48e195ce9c344ec2e5abdea76e35a99dd6f21a8dc05d5d3beeb4
 
 build:
