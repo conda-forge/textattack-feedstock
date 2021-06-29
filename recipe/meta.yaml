@@ -10,40 +10,45 @@ source:
   sha256: 7b97f0aad76b48e195ce9c344ec2e5abdea76e35a99dd6f21a8dc05d5d3beeb4
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
+  number: 1
+  script: {{ PYTHON }} -m pip install . -v
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - bert_score
     - editdistance
     - filelock
     - language_tool_python
-    - lru-dict 
-    - nlp
-    - numpy
-    - pandas 
-    - scikit-learn
-    - scipy 
-    - sentence-transformers
+    - lru-dict
+    # - nlp
+    - numpy <1.19.0
+    - pandas
+    # - scikit-learn
+    - scipy
     - pytorch
+    # - sentence-transformers
     - transformers
-    - tensorflow 
-    - tensorflow-hub
-    - tensorboardX
+    # - tensorflow
+    # - tensorflow-hub
+    # - tensorboardX
     - terminaltables
-    - torchfile
+    # - torchfile
     - tokenizers
     - tqdm
     - visdom
-    - wandb
+    # - wandb
     - python-flair
     - more-itertools
+    - lemminflect
+    - num2words
+    - word2number
+    - datasets
+    - nltk
 
 test:
   commands:
@@ -60,7 +65,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - rluria14
     - oblute
     - ndmaxar
-    - mxrconda
