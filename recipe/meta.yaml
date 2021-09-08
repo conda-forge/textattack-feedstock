@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.6
     - pip
-    # - tensorflow_text
+    - tensorflow_text
   run:
     - python >=3.6
     - bert_score
@@ -50,7 +50,7 @@ requirements:
     - word2number
     - datasets
     - nltk
-    - tensorflow_text
+    # - tensorflow_text
 
 test:
   commands:
