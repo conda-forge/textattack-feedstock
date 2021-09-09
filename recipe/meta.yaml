@@ -34,6 +34,7 @@ requirements:
     # - sentence-transformers
     - transformers
     - tensorflow
+    - tensorflow_text
     # - tensorflow-hub
     # - tensorboardX
     - terminaltables
