@@ -34,9 +34,9 @@ requirements:
     # - sentence-transformers
     - transformers
     - tensorflow
+    - tensorflow-hub
+    - tensorboardX
     - tensorflow_text
-    # - tensorflow-hub
-    # - tensorboardX
     - terminaltables
     # - torchfile
     - tokenizers
