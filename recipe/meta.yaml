@@ -51,6 +51,7 @@ requirements:
     - datasets
     - nltk
     # - tensorflow_text
+    # test
 
 test:
   commands:
