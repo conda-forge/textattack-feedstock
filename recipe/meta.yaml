@@ -55,7 +55,7 @@ requirements:
 
 test:
   commands:
-    - textattack --help
+    # - textattack --help
 
 about:
   home: https://github.com/QData/textattack
