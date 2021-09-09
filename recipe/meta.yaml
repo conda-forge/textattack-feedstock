@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - tensorflow_text
+    # - tensorflow_text
   run:
     - python >=3.6
     - bert_score
