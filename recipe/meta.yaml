@@ -18,7 +18,6 @@ requirements:
   host:
     - python >=3.6
     - pip
-    # - tensorflow_text
   run:
     - python >=3.6
     - bert_score
@@ -34,7 +33,7 @@ requirements:
     - pytorch
     # - sentence-transformers
     - transformers
-    # - tensorflow
+    - tensorflow
     # - tensorflow-hub
     # - tensorboardX
     - terminaltables
@@ -50,12 +49,11 @@ requirements:
     - word2number
     - datasets
     - nltk
-    # - tensorflow_text
     # test
 
 test:
   commands:
-    # - textattack --help
+    - textattack --help
 
 about:
   home: https://github.com/QData/textattack
