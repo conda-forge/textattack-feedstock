@@ -33,10 +33,10 @@ requirements:
     - pytorch
     # - sentence-transformers
     - transformers
-    - tensorflow
+    - tensorflow>=2
     - tensorflow-hub
     - tensorboardX
-    - tensorflow_text
+    - tensorflow_text=>2
     - terminaltables
     # - torchfile
     - tokenizers
