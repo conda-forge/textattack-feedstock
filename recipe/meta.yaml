@@ -25,24 +25,24 @@ requirements:
     - filelock
     - language_tool_python
     - lru-dict
-    - nlp
+    # - nlp
     - numpy <1.19.0
     - pandas
-    - scikit-learn
+    # - scikit-learn
     - scipy
     - pytorch
-    - sentence-transformers
+    # - sentence-transformers
     - transformers
     - tensorflow
     - tensorflow-hub
     - tensorboardX
     - tensorflow_text
     - terminaltables
-    - torchfile
+    # - torchfile
     - tokenizers
     - tqdm
     - visdom
-    - wandb
+    # - wandb
     - python-flair
     - more-itertools
     - lemminflect
@@ -50,7 +50,7 @@ requirements:
     - word2number
     - datasets
     - nltk
-    test
+    # - test
 
 test:
   commands:
