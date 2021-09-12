@@ -36,6 +36,11 @@ requirements:
     - tensorflow
     - tensorflow-hub
     - tensorboardX
+    - "sentence_transformers>0.2.6"
+    - "stanza"
+    - "visdom"
+    - "wandb"
+    - "gensim==3.8.3"
     - tensorflow_text
     - terminaltables
     # - torchfile
