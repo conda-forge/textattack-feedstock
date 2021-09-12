@@ -26,6 +26,7 @@ requirements:
     # - visdom
     # - wandb
     # - gensim==3.8.3
+  pip:
     - tensorflow_text
   run:
     - python >=3.6
