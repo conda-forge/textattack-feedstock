@@ -18,14 +18,6 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - tensorflow
-    - tensorflow-hub
-    - tensorboardX
-    # - sentence_transformers>0.2.6
-    # - stanza
-    # - visdom
-    # - wandb
-    # - gensim==3.8.3
   pip:
     - tensorflow_text
   run:
@@ -45,6 +37,15 @@ requirements:
     - transformers
     - terminaltables
     # - torchfile
+    - tensorflow
+    - tensorflow-hub
+    - tensorboardX
+    # - sentence_transformers>0.2.6
+    # - stanza
+    # - visdom
+    # - wandb
+    # - gensim==3.8.3
+    - tensorflow_text
     - tokenizers
     - tqdm
     - visdom
