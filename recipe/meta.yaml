@@ -18,8 +18,8 @@ requirements:
   host:
     - python >=3.6
     - pip
-  pip:
-    - tensorflow_text
+  # pip:
+  #   - tensorflow_text
   run:
     - python >=3.6
     - bert_score
@@ -40,11 +40,6 @@ requirements:
     - tensorflow
     - tensorflow-hub
     - tensorboardX
-    # - sentence_transformers>0.2.6
-    # - stanza
-    # - visdom
-    # - wandb
-    # - gensim==3.8.3
     - tensorflow_text
     - tokenizers
     - tqdm
