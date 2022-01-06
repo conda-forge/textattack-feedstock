@@ -1,58 +1,54 @@
 {% set name = "textattack" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.4" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/QData/{{ name|title }}/archive/v{{ version }}.tar.gz
-  sha256: 7b97f0aad76b48e195ce9c344ec2e5abdea76e35a99dd6f21a8dc05d5d3beeb4
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textattack-{{ version }}.tar.gz
+  sha256: 2d8328ed2c6f75a8f6d7d79a66afdade512931fba0be583c34dd53ab8582b4e1
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -v
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
     - pip
-  run:
     - python >=3.6
-    - bert_score
+  run:
+    - bert_score >=0.3.5
+    - datasets
     - editdistance
     - filelock
-    - language_tool_python
-    - lru-dict
-    # - nlp
-    - numpy <1.19.0
-    - pandas
-    # - scikit-learn
-    - scipy
-    - pytorch
-    # - sentence-transformers
-    - transformers
-    # - tensorflow
-    # - tensorflow-hub
-    # - tensorboardX
-    - terminaltables
-    # - torchfile
-    - tokenizers
-    - tqdm
-    - visdom
-    # - wandb
     - python-flair
-    - more-itertools
+    - language_tool_python
     - lemminflect
-    - num2words
-    - word2number
-    - datasets
+    - lru-dict
+    - more-itertools
     - nltk
+    - num2words
+    - numpy >=1.19.2
+    - pandas >=1.0.1
+    - pysocks !=1.5.7,>=1.5.6
+    - python >=3.6
+    - scipy >=1.4.1
+    - terminaltables
+    - pytorch !=1.8,>=1.7.0
+    - tqdm <4.50.0,>=4.27
+    - transformers >=3.3.0
+    - word2number
 
 test:
+  imports:
+    - textattack
   commands:
-    - textattack --help
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/QData/textattack
@@ -66,6 +62,3 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
-    - rluria14
-    - oblute
-    - ndmaxar
