@@ -44,8 +44,6 @@ requirements:
     - huggingface_hub
 
 test:
-  imports:
-    - textattack
   commands:
     - textattack --help
 
