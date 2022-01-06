@@ -17,7 +17,6 @@ build:
 
 requirements:
   host:
-    - docs
     - pip
     - python >=3.6
   run:
@@ -47,9 +46,7 @@ test:
   imports:
     - textattack
   commands:
-    - pip check
-  requires:
-    - pip
+    - textattack --help
 
 about:
   home: https://github.com/QData/textattack
