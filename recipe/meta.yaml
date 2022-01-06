@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6,<3.10
   run:
     - bert_score >=0.3.5
     - datasets
@@ -34,7 +34,7 @@ requirements:
     - numpy >=1.19.2
     - pandas >=1.0.1
     - pysocks !=1.5.7,>=1.5.6
-    - python >=3.6
+    - python >=3.6,<3.10
     - scipy >=1.4.1
     - terminaltables
     - pytorch !=1.8,>=1.7.0
