@@ -1,5 +1,5 @@
 {% set name = "textattack" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/QData/{{ name|title }}/archive/v{{ version }}.tar.gz
-  sha256: 7b97f0aad76b48e195ce9c344ec2e5abdea76e35a99dd6f21a8dc05d5d3beeb4
+  sha256: d6603831130516484fa1047f58c67a3da06201f435a9e0dcc9a6d61366d1a865
 
 build:
   noarch: python
@@ -18,6 +18,8 @@ requirements:
   host:
     - python >=3.6
     - pip
+  # pip:
+  #   - tensorflow_text
   run:
     - python >=3.6
     - bert_score
@@ -33,11 +35,12 @@ requirements:
     - pytorch
     # - sentence-transformers
     - transformers
-    # - tensorflow
-    # - tensorflow-hub
-    # - tensorboardX
     - terminaltables
     # - torchfile
+    - tensorflow
+    - tensorflow-hub
+    - tensorboardX
+    - tensorflow_text
     - tokenizers
     - tqdm
     - visdom
@@ -49,6 +52,7 @@ requirements:
     - word2number
     - datasets
     - nltk
+    # - test
 
 test:
   commands:
@@ -69,3 +73,4 @@ extra:
     - rluria14
     - oblute
     - ndmaxar
+    - dsangillo
