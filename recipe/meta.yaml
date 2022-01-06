@@ -42,13 +42,13 @@ requirements:
     - transformers >=3.3.0
     - word2number
 
-  test:
-    imports:
-      - textattack
-    commands:
-      - pip check
-    requires:
-      - pip
+test:
+  imports:
+    - textattack
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/QData/textattack
