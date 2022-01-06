@@ -43,8 +43,6 @@ requirements:
     - word2number
 
 test:
-  imports:
-    - textattack
   commands:
     - textattack --help
 
