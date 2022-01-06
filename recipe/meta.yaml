@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/textattack-{{ version }}.tar.gz
-  sha256: 2d8328ed2c6f75a8f6d7d79a66afdade512931fba0be583c34dd53ab8582b4e1
+  url: https://github.com/QData/{{ name|title }}/archive/v{{ version }}.tar.gz
+  sha256: 82071b49da645c13e4666fb5da6aab08d5ec0f6d0b3d95c806739a294771ec46
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -v
 
 requirements:
   host:
     - pip
-    - python >=3.6,<3.10
+    - python >=3.6
   run:
     - bert_score >=0.3.5
     - datasets
@@ -34,7 +34,7 @@ requirements:
     - numpy >=1.19.2
     - pandas >=1.0.1
     - pysocks !=1.5.7,>=1.5.6
-    - python >=3.6,<3.10
+    - python >=3.6
     - scipy >=1.4.1
     - terminaltables
     - pytorch !=1.8,>=1.7.0
