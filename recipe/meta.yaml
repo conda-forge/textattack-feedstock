@@ -41,9 +41,11 @@ requirements:
     - tqdm <4.50.0,>=4.27
     - transformers >=3.3.0
     - word2number
-    - huggingface_hub
+    - huggingface-hub
 
 test:
+  import:
+    - textattack
   commands:
     - textattack --help
 
