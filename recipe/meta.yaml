@@ -44,8 +44,11 @@ requirements:
     - huggingface_hub
 
 test:
+  imports:
+    - textattack
   commands:
-    - textattack --help
+    - python -c "import importlib.util; assert importlib.util.find_spec('textattack')"
+
 
 about:
   home: https://github.com/QData/textattack
