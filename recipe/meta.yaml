@@ -43,12 +43,9 @@ requirements:
     - word2number
 
 test:
-  imports:
-    - textattack
-  commands:
-    - pip check
-  requires:
-    - pip
+  test:
+    commands:
+      - textattack --help
 
 about:
   home: https://github.com/QData/textattack
