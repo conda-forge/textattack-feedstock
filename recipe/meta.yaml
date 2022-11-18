@@ -1,5 +1,5 @@
 {% set name = "textattack" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/QData/{{ name|title }}/archive/v{{ version }}.tar.gz
-  sha256: 7b97f0aad76b48e195ce9c344ec2e5abdea76e35a99dd6f21a8dc05d5d3beeb4
+  sha256: 82071b49da645c13e4666fb5da6aab08d5ec0f6d0b3d95c806739a294771ec46
 
 build:
   noarch: python
