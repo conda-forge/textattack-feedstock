@@ -11,15 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -v
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - bert_score
     - editdistance
     - filelock
@@ -51,6 +51,8 @@ requirements:
     - nltk
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - textattack --help
 
